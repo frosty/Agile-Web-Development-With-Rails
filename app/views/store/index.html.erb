@@ -5,7 +5,7 @@
 <h3><%=h product.title %></h3>
 <%= product.description %>
 <div class="price-line">
-<span class="price"><%= product.price %></span>
+<span class="price"><%= number_to_currency(product.price, :unit => "&pound;") %></span>
 </div>
 </div>
 <% end %>
